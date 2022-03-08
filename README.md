@@ -100,4 +100,7 @@ http://localhost:8888/greeting-service/qa
 }
 ]
 }
-
+-------------------------------------------------------------------------------------------------
+depois de feito todos estes teste foi criado um repositorio no github,
+detro dele colocado profiles, apontaremos os profiles para este projeto: 
+o Link do projeto onde estão os profiles: https://github.com/Fernandolilo/profile-microservice-testes
