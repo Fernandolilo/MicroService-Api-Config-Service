@@ -1,9 +1,15 @@
 server:
   port: 8888
-
 spring:
   application:
-    name: config-server
-  profiles:
-    active:
-    - native #desta forma estamos apontando as configurações do profile, nativo 
+    name: systempro-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Fernandolilo/profile-microservice-testes
+          # username: username => para o caso de repositorio privado
+          # password: password=> tambem para repositorio privado
+          default-label: master
+          search-paths:
+          - 'greeting-service*'
